@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.trinfosoft.teacherassistant.TimeTable">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/textColorSecondary" />
+
+            <LinearLayout
+                android:id="@+id/monday_click"
+                style="@style/settings_item_layout">
+
+                <TextView
+                    style="@style/settings_sub_header"
+                    android:text="Monday"
+                    android:textSize="24sp"
+                    tools:text="Monday" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/textColorSecondary" />
+
+            <LinearLayout
+                android:id="@+id/tuesday_click"
+                style="@style/settings_item_layout">
+
+                <TextView
+                    style="@style/settings_sub_header"
+                    android:text="Tuesday"
+                    android:textSize="24sp"
+                    tools:text="Tuesday" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/textColorSecondary" />
+
+            <LinearLayout
+                android:id="@+id/wednesday_click"
+                style="@style/settings_item_layout">
+
+                <TextView
+                    style="@style/settings_sub_header"
+                    android:text="Wednesday"
+                    android:textSize="24sp"
+                    tools:text="Wednesday" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/textColorSecondary" />
+
+            <LinearLayout
+                android:id="@+id/thursday_click"
+                style="@style/settings_item_layout">
+
+                <TextView
+                    style="@style/settings_sub_header"
+                    android:text="Thursday"
+                    android:textSize="24sp"
+                    tools:text="Thursday" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/textColorSecondary" />
+
+            <LinearLayout
+                android:id="@+id/friday_click"
+                style="@style/settings_item_layout">
+
+                <TextView
+                    style="@style/settings_sub_header"
+                    android:text="Friday"
+                    android:textSize="24sp"
+                    tools:text="Friday" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/textColorSecondary" />
+
+            <LinearLayout
+                android:id="@+id/saturday_click"
+                style="@style/settings_item_layout">
+
+                <TextView
+                    style="@style/settings_sub_header"
+                    android:text="Saturday"
+                    android:textSize="24sp"
+                    tools:text="Saturday" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/textColorSecondary" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.trinfosoft.teacherassistant">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TimeTable"
+            android:label="@string/title_activity_time_table"
+            android:parentActivityName=".TimeTable"/>
+        <activity
+            android:name=".About"
+            android:parentActivityName=".About" />
+        <activity
+            android:name=".Setting"
+            android:parentActivityName=".Setting" />
+        <activity
+            android:name=".Classes"
+            android:parentActivityName=".Classes" />
+        <activity
+            android:name=".Subjects"
+            android:parentActivityName=".Subjects" />
+
+        <activity android:name=".Monday"
+            android:parentActivityName=".Monday"/>
+        <activity android:name=".Tuesday"
+            android:parentActivityName=".Tuesday"/>
+        <activity android:name=".Wednesday"
+            android:parentActivityName=".Wednesday"/>
+        <activity android:name=".Thursday"
+            android:parentActivityName=".Thursday"/>
+        <activity android:name=".Friday"
+            android:parentActivityName=".Friday"/>
+        <activity android:name=".Saturday"
+            android:parentActivityName=".Saturday"/>
+
+        <service android:name=".Notification_Service"
+            android:enabled="true"
+            android:exported="true"/>
+
+        <receiver android:name=".BootService"
+            android:exported="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.DATE_SET"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

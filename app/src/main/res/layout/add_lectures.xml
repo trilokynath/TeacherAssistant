@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <LinearLayout
+            android:id="@+id/llReminder"
+            style="@style/settings_item_layout">
+
+            <LinearLayout
+                android:id="@+id/start_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/items_inbetween_space">
+
+                    <TextView
+                        android:id="@+id/tv_reminder_time_label"
+                        style="@style/settings_sub_header"
+                        android:text="Lecture Time" />
+
+                    <ImageView
+                        android:id="@+id/iv_timer"
+                        android:layout_width="@dimen/timer_icon"
+                        android:layout_height="@dimen/timer_icon"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:contentDescription="@string/todo"
+                        android:src="@android:drawable/presence_away" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_reminder_time_desc"
+                    style="@style/settings_details"
+                    android:paddingBottom="@dimen/items_inbetween_space"
+                    android:paddingTop="@dimen/items_top_padding"
+                    android:text="Pick the Starting Time of Lecture" />
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/textColorSecondary"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <LinearLayout
+                android:id="@+id/end_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/items_inbetween_space">
+
+                    <Spinner
+                        android:id="@+id/select_subject"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:spinnerMode="dialog"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_reminder_time_label2"
+                        style="@style/settings_sub_header"
+                        android:text="Select Subject" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout><LinearLayout
+        style="@style/settings_item_layout">
+
+
+        <LinearLayout
+            android:id="@+id/ll_terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/items_inbetween_space"
+            android:paddingTop="@dimen/items_inbetween_space">
+
+            <TextView
+                android:id="@+id/tv_agree_header"
+                style="@style/settings_header"
+                android:paddingBottom="@dimen/items_inbetween_space"
+                android:text="Selected Time is   "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/s_hour"
+                style="@style/settings_sub_header"
+                android:layout_width="wrap_content"
+                android:text="00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/s_hour1"
+                style="@style/settings_sub_header"
+                android:text=":"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/s_min"
+                style="@style/settings_sub_header"
+                android:text="00"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>
+
